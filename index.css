@@ -137,7 +137,12 @@
   cursor: pointer;
 }
 
-@media (max-width: 476px) {
+#quantity-item{
+ margin-left: 10px;
+ margin-top: 10px;
+}
+
+@media (max-width: 500px) {
   .app-container {
     display: flex;
     flex-direction: column;
