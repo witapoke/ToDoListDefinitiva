@@ -21,7 +21,6 @@
   flex-direction: column;
 }
 
-
 .love-section {
   display: flex;
   padding: 10px;
@@ -137,14 +136,35 @@
   cursor: pointer;
 }
 
-#quantity-item{
- margin-left: 10px;
- margin-top: 10px;
+#quantity-item {
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 @media (max-width: 500px) {
   .app-container {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 337px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .task-container {
+    width: auto;
+  }
+
+  #edit-input {
+    padding: 3px;
+    padding-left: 5px;
+    width: 100px;
+  }
+
+  .title {
+    color: red;
   }
 }
