@@ -87,6 +87,24 @@ document.addEventListener('DOMContentLoaded', () => {
       span.appendChild(cancelBtn)
       span.appendChild(finishBtn)
 
+      editInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' && taskInput.value !== '') {
+          p.textContent = editInput.value
+
+          span.removeChild(editInput)
+          span.removeChild(cancelBtn)
+          span.removeChild(finishBtn)
+
+          listItem.appendChild(p)
+          listItem.appendChild(span)
+          span.appendChild(editBtn)
+          span.appendChild(deleteBtn)
+
+          updateTasks()
+          tellQuantity()
+        }
+      })
+
       cancelBtn.addEventListener('click', () => {
         span.removeChild(editInput)
         span.removeChild(cancelBtn)
