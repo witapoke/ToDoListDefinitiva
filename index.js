@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'Enter' && taskInput.value !== '') {
         addTask(taskInput.value)
         updateTasks()
+        tellQuantity()
       }
     })
 

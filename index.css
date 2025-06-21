@@ -36,6 +36,7 @@
 .task-input {
   padding-left: 10px;
   padding: 5px;
+  font-size: 18px;
 }
 
 .add-task-btn {
@@ -45,7 +46,7 @@
 
 .add-task-btn:hover {
   border: 2px solid blueviolet;
-  color: rgb(24, 209, 24);
+  color: white;
 }
 
 .task-list {
@@ -58,16 +59,18 @@
 
 #list-item {
   display: flex;
-  padding: 5px;
+  padding: 8px;
   align-items: center;
   width: auto;
-  background-color: blueviolet;
+  background-color: gray;
   margin: 5px;
 }
 
 #tarea-content {
   margin: 0 !important;
   font-size: 18px;
+  padding-left: 2px;
+  font-weight: bold;
 }
 
 #spansito {
@@ -80,31 +83,49 @@
   }
 }
 
-#edit-btn,
 #delete-btn {
   border: none;
   font-size: 15px;
-  background-color: gray;
+  background-color: white;
   padding: 4px;
+}
+
+#edit-btn {
+  border: none;
+  font-size: 15px;
+  background-color: white;
+  padding: 4px;
+}
+
+#delete-btn:hover{
+  color: red;
+}
+
+#edit-btn:hover{
+  color: green;
 }
 
 @media (max-width: 576px) {
   .love-section {
-    color: red;
+    margin: 5px;
   }
 
-  #list-item{
+  #list-item {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
 
-  #spansito{
+  #spansito {
     display: flex;
     flex-direction: column;
   }
 
-  #tarea-content{
+  #tarea-content {
     margin: 5px !important;
+  }
+
+  .task-container {
+    width: 100%;
   }
 }
