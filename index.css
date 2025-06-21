@@ -92,4 +92,19 @@
   .love-section {
     color: red;
   }
+
+  #list-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #spansito{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #tarea-content{
+    margin: 5px !important;
+  }
 }
