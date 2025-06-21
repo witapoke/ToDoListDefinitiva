@@ -6,165 +6,90 @@
 }
 
 .app-container {
-  background-color: rgb(104, 104, 180);
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-height: 100vh;
+  background-color: gray;
 }
 
 .task-container {
-  height: 600px;
-  width: 400px;
-  background-color: beige;
   display: flex;
   flex-direction: column;
-}
-
-.love-section {
-  display: flex;
-  padding: 10px;
-  p {
-    font-size: 18px;
-    font-weight: bold;
-  }
+  background-color: white;
+  align-items: center;
+  height: 600px;
+  width: 400px;
 }
 
 .title {
-  width: 100%;
-  padding: 10px;
   font-size: 30px;
-  background-color: rgb(151, 28, 151);
-  color: white;
+  padding: 12px;
+  width: 100%;
+  background-color: blueviolet;
 }
 
 .fake-form-div {
   display: flex;
-  padding: 10px;
   width: 100%;
+  padding: 10px;
   gap: 5px;
-  input {
-    width: 80%;
-    font-size: 18px;
-    padding: 3px;
-    padding-left: 5px;
-  }
-  button {
-    width: 20%;
-    border: 1px solid black;
-    background-color: rgb(73, 3, 80);
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  button:hover {
-    text-decoration: underline;
-  }
+}
+
+.task-input {
+  padding-left: 10px;
+  padding: 5px;
+}
+
+.add-task-btn {
+  border: none;
+  background-color: gray;
+}
+
+.add-task-btn:hover {
+  border: 2px solid blueviolet;
+  color: rgb(24, 209, 24);
 }
 
 .task-list {
+  list-style: none;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  list-style: none;
   gap: 10px;
-  width: 100%;
 }
 
 #list-item {
   display: flex;
+  padding: 5px;
+  align-items: center;
+  width: auto;
+  background-color: blueviolet;
+  margin: 5px;
+}
+
+#tarea-content {
+  margin: 0 !important;
+  font-size: 18px;
+}
+
+#spansito {
+  display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 10px;
   gap: 5px;
-  background-color: gray;
-  p {
-    font-size: 18px;
-    width: 70%;
-    word-break: keep-all;
-  }
-  span {
-    display: flex;
-    gap: 5px;
-    button {
-      width: 100px;
-      height: 30px;
-    }
-  }
-}
-
-#edit-btn {
-  border: 2px solid black;
-  padding: 3px;
-  background-color: rgb(73, 3, 80);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 12px;
-  max-width: 60px;
-}
-
-#delete-btn {
-  border: 2px solid black;
-  padding: 3px;
-  background-color: beige;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 12px;
-}
-
-#delete-btn:hover {
-  color: red;
-}
-
-#edit-btn:hover {
-  text-decoration: underline;
-}
-
-#edit-input {
-  padding: 3px;
-  padding-left: 5px;
-}
-
-#cancel-btn:hover {
-  color: red;
-  cursor: pointer;
-}
-
-#finish-btn:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-#quantity-item {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-@media (max-width: 500px) {
-  .app-container {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 337px) {
-  .app-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .task-container {
-    width: auto;
-  }
-
   #edit-input {
-    padding: 3px;
-    padding-left: 5px;
-    width: 100px;
+    height: auto;
   }
+}
 
-  .title {
+#edit-btn,
+#delete-btn {
+  border: none;
+  font-size: 15px;
+  background-color: gray;
+  padding: 4px;
+}
+
+@media (max-width: 576px) {
+  .love-section {
     color: red;
   }
 }
